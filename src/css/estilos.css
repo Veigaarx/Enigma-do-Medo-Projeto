@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.cabecalho {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.cabecalho .logo { 
+    width: 100px;
+}
+
+.cabecalho .menu{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.cabecalho nav li a{
+    /* background-color: black; */
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    padding: 10px 20px;
+    transition: 0.5s all ease-in-out;
+}
+
+.cabecalho nav li a:hover{
+    transform: scale(1.1);
+}
+
+.cabecalho nav{
+    display: flex;
+    justify-content: center;
+    width: 1440px;
+}
+
+
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 300px);
+    padding: 0 30px 30px;
+    
+}
+
+.container .principal{
+    cursor: scroll;
+    transition: 0.5s all ease-in-out;
+    max-width: 630px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.container .principal:hover{
+    transform: scale(1.1);
+}
+
+.container .texto{
+    /* background-color: black; */
+    display: column;
+    color: white;
+    width: 75%;
+    text-align: center;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: bottom;
+}
+
+.container .lancamento{
+    color: white;
+    width: 80%;
+    font-size: 25px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: top;
+}
+.container .button{
+    background-color: #89e5f3;
+    color: black;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    transition: 0.5s all ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin: top;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.container .button:hover{
+    transform: scale(1.1);
+    background-color: white;
+}
+
+.fundo-verissimo{
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.fundo-verissimo::after{
+    content: "";
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #040203 0%, rgba(0, 0, 0, 0.85) 49%, #040203 100%);
+}
+
+.video-trailer{
+    display: flex;
+    width: 50vw;
+    height: 50vh;
+    position: absolute left;
+}

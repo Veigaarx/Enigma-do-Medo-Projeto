@@ -1,0 +1,56 @@
+@media (max-width: 1200px){
+    body{
+        background-color: black;
+    }
+
+    .fundo-verissimo{
+        display: none;
+    }
+
+    .container{
+        flex-wrap: wrap;
+        justify-content: center;
+        height: auto;
+        gap: 30px;
+    }
+
+    .container .principal{
+        max-width: 50%;
+    }
+
+    .container .informacoes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container .texto{
+        color: white;
+        text-align: center;
+    }
+
+    .container .botao{
+        background-color: #89e5f3 ;
+    }
+
+    .video{
+        max-width: 130%;
+        position: center;
+    }
+}
+
+@media (max-width: 500px){
+    .cabecalho{ 
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .container .principal{
+        max-width: 75%;
+    }
+
+    .video{
+        max-width: 100%;
+    }
+}
